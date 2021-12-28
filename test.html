@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//     function kiemTraMang(Arr,x) {
+//         let index;
+//         if (Arr.indexOf(x)>=0){
+//             index=Arr.indexOf(x)
+//             return [x,index]
+//         }
+// return [x,-1];
+//     }
+//     document.write(kiemTraMang([1,-8,7,6],-8))
+
+function kiemTraMang(Arr,x){
+    for (let i=0;i<Arr.length; i++){
+        if (x==Arr[i]){
+            return [x,i]
+        }
+
+    }
+    return [x,-1]
+}
+document.write(kiemTraMang([1,-8,7,6],-8))
+    </script>
+</body>
+</html>

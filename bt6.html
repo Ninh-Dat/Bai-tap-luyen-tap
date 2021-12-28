@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let N=+prompt('Nhập số nguyên N','')
+    for (let i=0 ; i < N; i++){
+        if (checkSnt(i)){
+            document.write(i+'==')
+        }
+
+    }
+    function checkSnt(N) {
+        for (let i=2;i<N;i++){
+            if (N%i==0){
+                return false;''
+            }
+        }
+     return true;
+    }
+</script>
+</body>
+</html>
